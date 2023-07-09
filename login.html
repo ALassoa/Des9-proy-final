@@ -23,9 +23,9 @@
                 <a class="active" href="payment.html">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
             </nav>
         </header>
-        
+        <!--Inicio de la clase login-->
         <div class="wrapper">
-            <div class="formulario">
+            <div class="formLogin">
                 <h2>LOGIN</h2>
                     <form action="#">
                         <div class="inputBox">
@@ -51,6 +51,40 @@
                         </div>
                     </form>
             </div>
+            <!--Fin de la clase login-->
+            <!--Inicio de la clase Registro-->
+            <div class="formRegister">
+                <h2>REGISTRO</h2>
+                    <form action="#">
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" name="" id="correoRegister" required>
+                            <label for="">Correo</label>
+                        </div>
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="" id="passwordRegister" required>
+                            <label for="">Contraseña</label>
+                        </div>
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="" id="passwordRegisterConf" required>
+                            <label for="">Confirmar contraseña</label>
+                        </div>
+                        <div class="forgotPassword">
+                            <label for=""><input type="checkbox">He leído y acepto términos y condiciones</label>
+                        </div>
+                        <div>
+                            <button class="btnLogin" type="submit">Registrarse</button>
+                        </div>
+                        <div class="crearCuenta">
+                            <p>Ya yo tengo una cuenta
+                                <a href="#">Login</a>
+                            </p>
+                        </div>
+                    </form>
+            </div>
+            <!--Fin de la clase Registro-->
         </div>
         
     </body>
