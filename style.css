@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+    --morado: #512888;
+    --naranja: #eb6123;
+    --blanco: #FFF;
 }
 
 body{
@@ -23,7 +26,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 1.25rem 5rem;
-    background-color: #512888;
+    background-color: var(--morado);
     box-shadow: 0 .3rem .9rem rgba(0, 0, 0, 0.06);
     z-index: 99;
 }
@@ -47,7 +50,7 @@ header{
     display: block;
     width: 100%;
     height: .313rem;
-    background-color: #fff;
+    background-color: var(--blanco);
     margin: .375rem 0;
     transition: .4s;
 }
@@ -72,7 +75,7 @@ header{
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #512888;
+    background-color: var(--morado);
     padding-top: 7.5rem;
     transition: .4s; 
 }
@@ -88,13 +91,14 @@ header{
     margin: 0 auto 1rem;
     text-align: center;
     padding: .75rem 1rem;
-    background-color: #ad88dd; 
-    color: #fff;
+    border-radius: 1rem;
+    background-color: #9261d1; 
+    color: var(--blanco);
     text-decoration: none;
 }
 
 .responsive a:hover{
-    background-color: #eb6123;
+    background-color: var(--naranja);
 }
 
 @media (min-width:47.938rem){
@@ -122,7 +126,7 @@ header{
 
     color: #0000;
     background: 
-      linear-gradient(90deg,#eb6123 50%,#fff 0) 
+      linear-gradient(90deg,var(--naranja) 50%,var(--blanco) 0) 
       var(--_p,100%)/200% no-repeat;
     -webkit-background-clip: text;
             background-clip: text;
@@ -137,7 +141,7 @@ header{
     width: 25rem;
     height: 27.5rem;
     background: transparent;
-    border: 0.19rem solid #512888;
+    border: 0.19rem solid var(--morado);
     border-radius: 1.3rem;
     backdrop-filter: blur(1.3rem);
     display: flex;
@@ -182,7 +186,7 @@ header{
 .form.Login h2, 
 .form.Register h2{
     font-size: 2.5rem;
-    color: #eb6123;
+    color: var(--naranja);
     text-align: center;
     /*text-shadow: -.06rem 0 white, 0 .06rem white, .06rem 0 white, 0 -.06rem white;*/
 }
@@ -191,7 +195,7 @@ header{
     position: relative;
     width: 100%;
     height: 2.8rem;
-    border-bottom: .13rem solid #512888;
+    border-bottom: .13rem solid var(--morado);
     margin: 1.875rem 0;
 }
 
@@ -201,7 +205,7 @@ header{
     left: .3rem;
     transform: translateY(-50%);
     font-size: 1.2em;
-    color: #512888;
+    color: var(--morado);
     font-weight: 500;
     pointer-events: none;
     transition: .4s;
@@ -225,13 +229,13 @@ header{
     position: absolute;
     right: .5rem;
     font-size: 1.2em;
-    color: #fff;
+    color: var(--blanco);
     line-height: 3.56rem;
 }
 
 .forgotPassword{
     font-size: .9em;
-    color: #fff;
+    color: var(--blanco);
     font-weight: 500;
     margin: -.94rem 0 .94rem;
     display: flex;
@@ -239,13 +243,13 @@ header{
 }
 
 .forgotPassword a{
-    color: #fff;
+    color: var(--blanco);
     text-decoration: none;
 }
 
 .forgotPassword a:hover{
     text-decoration: underline;
-    color: #eb6123;
+    color: var(--naranja);
 }
 
 .btnLogin{
@@ -257,31 +261,31 @@ header{
     cursor: pointer;
     font-size: 1.2em;
     font-weight: 500;
-    color: #fff;
-    background-color: #eb6123;
+    color: var(--blanco);
+    background-color: var(--naranja);
 }
 
 .btnLogin:hover{
-    background-color: #512888;
+    background-color: var(--morado);
     transition: .4s;
 }
 
 .crearCuenta{
     font-size: .9em;
-    color: #fff;
+    color: var(--blanco);
     text-align: center;
     font-weight: 500;
     margin: 1.53rem 0 .625rem;
 }
 
 .crearCuenta p a{
-    color: #512888;
+    color: var(--morado);
     text-decoration: none;
     font-weight: 600;
 }
 
 .crearCuenta p a:hover{
     text-decoration: underline;
-    color: #eb6123;
+    color: var(--naranja);
 }
 /*****************FIN DEL LOGIN*******************/
