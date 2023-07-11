@@ -58,15 +58,44 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: height .3s ease;
+    overflow: hidden;
 }
 
-.wrapper .formLogin{
+.wrapper.active{
+    height: 32.5rem;
+}
+
+.wrapper .form{
     width: 100%;
     padding: 2.5rem;
 }
 
-.formLogin h2, 
-.formRegister h2{
+.wrapper .form.Login{
+     /*display: none;*/
+    transition: transform .18s ease;
+    transform: translateX(0rem);
+}
+
+.wrapper.active .form.Login{
+    /*display: none;*/
+    transition: none;
+    transform: translateX(-25rem);
+}
+
+.wrapper.active .form.Register{
+    /*display: none;*/
+    transition: transform .18s ease;
+    transform: translateX(0rem);
+}
+
+.wrapper .form.Register{
+    position: absolute;
+    transform: translateX(25rem);
+}
+
+.form.Login h2, 
+.form.Register h2{
     font-size: 2.5rem;
     color: #eb6123;
     text-align: center;
