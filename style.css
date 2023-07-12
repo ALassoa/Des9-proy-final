@@ -101,7 +101,7 @@ header{
     background-color: var(--naranja);
 }
 
-@media (min-width:47.938rem){
+@media (min-width:51.875rem){
     .hamburguesa{
         display: none;
     }
@@ -111,7 +111,7 @@ header{
     }
 }
 
-@media (max-width:47.938rem){
+@media (max-width:51.875rem){
     .navbar{
         display: none;
     }
@@ -289,3 +289,39 @@ header{
     color: var(--naranja);
 }
 /*****************FIN DEL LOGIN*******************/
+
+#welcome{
+    background-image: url("img/perroPaseo.jpg");
+    height: 90vh;
+    width: 100%;
+    background-position: top 80% right -20%;
+    background-size: cover;
+    position: fixed;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/***********CALENDARIO**************/
+.calendly-inline-widget{
+    position: relative;
+    width: 74rem;
+    height: 70rem;
+    background: transparent;
+    border: 0.19rem solid var(--morado);
+    border-radius: 1.3rem;
+    backdrop-filter: blur(1.3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*transition: height .3s ease;*/
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+/***********FIN DE CALENDARIO**************/
