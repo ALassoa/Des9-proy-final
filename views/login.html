@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class="active" href="/perfil"><i class="fa-solid fa-user"></i></a><!--muestra las mascotas del usuarios-->
+                <a class="active" href="/index">Home</a>
+                <a class="active" href="/packs">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
+                <a class="active" href="/cuidadores">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
+                <a class="active" href="/payment">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
+            </nav>
+            <button class="hamburguesa">
+                <div class="bar"></div>
+            </button>
+        </header>
+        <nav class="responsive">
+            <a class="active" href="/perfil"><i class="fa-solid fa-user"></i></a><!--muestra las mascotas del usuarios-->
+            <a class="active" href="/index">Home</a>
+            <a class="active" href="/packs">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
+            <a class="active" href="/cuidadores">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
+            <a class="active" href="/payment">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
+        </nav>
+        <!--Inicio de la clase login-->
+        <div class="wrapper">
+            <div class="form Login">
+                <h2>LOGIN</h2>
+                    <form action="#">
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" name="" id="correoLogin" required>
+                            <label for="">Correo</label>
+                        </div>
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="" id="passwordLogin" required>
+                            <label for="">Contraseña</label>
+                        </div>
+                        <div class="forgotPassword">
+                            <a href="#">He olviado mi contraseña</a>
+                        </div>
+                        <div>
+                            <button class="btnLogin" type="submit">Iniciar sesión</button>
+                        </div>
+                        <div class="crearCuenta">
+                            <p>¿No tiene cuenta?
+                                <a href="#" class="register-link">Crear una</a>
+                            </p>
+                        </div>
+                    </form>
+            </div>
+            <!--Fin de la clase login-->
+            <!--Inicio de la clase Registro-->
+            <div class="form Register">
+                <h2>REGISTRO</h2>
+                    <form action="#">
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" name="" id="correoRegister" required>
+                            <label for="">Correo</label>
+                        </div>
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="" id="passwordRegister" required>
+                            <label for="">Contraseña</label>
+                        </div>
+                        <div class="inputBox">
+                            <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                            <input type="password" name="" id="passwordRegisterConf" required>
+                            <label for="">Confirmar contraseña</label>
+                        </div>
+                        <div class="forgotPassword">
+                            <label for=""><input type="checkbox"> He leído y acepto términos y condiciones</label>
+                        </div>
+                        <div>
+                            <button class="btnLogin" type="submit">Registrarse</button>
+                        </div>
+                        <div class="crearCuenta">
+                            <p>Ya yo tengo una cuenta
+                                <a href="#" class="login-link">Login</a>
+                            </p>
+                        </div>
+                    </form>
+            </div>
+            <!--Fin de la clase Registro-->
+        </div>
+        <script src="/scriptLogin.js"></script>
+    </body>
+</html>
