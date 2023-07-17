@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser')
 const NodeCache = require("node-cache");
+const authRoute = require("./routes/auth")
 
 const CLIENT_ID = "AeDBfqCHS2kuTjLSiFmkbrzVL8qm7ibeGvDD7JWyDJqGmwtuC5D-PnXGobAeD-bYQo_RwcO3lSBpwF2r";
 const APP_SECRET = "EAD089fc5pfy3Hab9WdFO5OJCdofETIOSnq4VnC-EkHZAqmsh1hhknke7v6dWm9sfG_NmPQRyYhPo8ti";
@@ -22,7 +23,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname + "/views/index.html"));
+    res.sendFile(path.join(__dirname + "/views/login.html"));
 });
 
 app.get("/perfil", (req, res) => {
@@ -130,3 +131,5 @@ app.use(express.static(__dirname + '/scripts'));
 app.listen(3000, () => {
     console.log("El servidor se ejecuta en el puerto :", 3000);
 });
+
+app.use('/api', authRoute)

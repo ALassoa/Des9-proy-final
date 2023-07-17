@@ -1,6 +1,6 @@
 const calend = document.getElementById("calendario");
 
-var cont = 0;
+let cont = 0;
 
 function muestraCalendario() {
     calend.style.display = "block";

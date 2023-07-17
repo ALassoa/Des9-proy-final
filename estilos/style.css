@@ -328,12 +328,12 @@ header{
 
 /* INI ESTILOS PARA BOTONES EN CALENDARIO */
 .btn {
-    background: #512888;
+    background: var(--morado);
     -webkit-border-radius: 9;
     -moz-border-radius: 9;
     border-radius: 9px;
     font-family: Arial;
-    color: #ffffff;
+    color: var(--blanco);
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
