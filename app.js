@@ -35,6 +35,12 @@ app.get("/payment",(req,res)=>{
     res.sendFile(path.join(__dirname + "/views/payment.html")); 
 });
 
+//Llamados post por backend
+app.post("/payment",(req,res)=>{
+    res.sendFile(path.join(__dirname + "/views/payment.html")); 
+});
+
+
 app.use(express.static(__dirname + '/img')); 
 app.use(express.static(__dirname + '/estilos')); 
 app.use(express.static(__dirname + '/scripts'));

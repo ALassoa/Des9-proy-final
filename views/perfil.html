@@ -1,72 +1,3 @@
-<<<<<<< HEAD:perfil.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERFIL</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
-    referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-</head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a class="active" href="perfil.html"><i class="fa-solid fa-user"></i></a><!--muestra las mascotas del usuarios-->
-                <a class="active" href="inicio.html">Home</a>
-                <a class="active" href="packs.html">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
-                <a class="active" href="cuidadores.html">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
-                <a class="active" href="payment.html">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
-            </nav>
-            <button class="hamburguesa">
-                <div class="bar"></div>
-            </button>
-        </header>
-        <nav class="responsive">
-            <a class="active" href="perfil.html"><i class="fa-solid fa-user"></i></a><!--muestra las mascotas del usuarios-->
-            <a class="active" href="inicio.html">Home</a>
-            <a class="active" href="packs.html">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
-            <a class="active" href="cuidadores.html">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
-            <a class="active" href="payment.html">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
-        </nav>
-        <!--Inicio de la clase login-->
-        <h2 id="nombreUsuario">Nombre del usuario</h2>
-        <div class="mascotasUsuario">
-            <li id="datoMascota">Nombre de la mascota:</li>
-            <li id="datoMascota">Raza:</li>
-            <li id="datoMascota">Edad:</li>
-            <li id="datoMascota">Enfermedad/Condición:</li>
-            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-            <button href="#" class="agregarMascota" id="agregarMascota">Agregar perro</button>
-            <form action="" class="agreagandoMascota" id="agregandoMascota">
-                <div>
-                    <input type="text" name="" id="pNombre" required>
-                    <label for="">Nombre</label>
-                </div>
-                <div>
-                    <input type="text" name="" id="pRaza" required>
-                    <label for="">Raza</label>
-                </div>
-                <div>
-                    <input type="text" name="" id="pEdad" required>
-                    <label for="">Edad</label>
-                </div>
-                <div>
-                    <input type="text" name="" id="pDecease" required>
-                    <label for="">Enfermedad/Condición</label>
-                </div>
-            </form>
-            <button class="agregarMascota" id="atrasMascota">Atrás</button>
-            <button class="agregarMascota" id="guardarMascota">Guardar</button>
-        </div>
-        <script src="scriptLogin.js"></script>
-    </body>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -103,8 +34,35 @@
             <a class="active" href="/payment">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
         </nav>
         <!--Inicio de la clase login-->
-        
+        <h2 id="nombreUsuario">Nombre del usuario</h2>
+        <div class="mascotasUsuario">
+            <li id="datoMascota">Nombre de la mascota:</li>
+            <li id="datoMascota">Raza:</li>
+            <li id="datoMascota">Edad:</li>
+            <li id="datoMascota">Enfermedad/Condición:</li>
+            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+            <button href="#" class="agregarMascota" id="agregarMascota">Agregar perro</button>
+            <form action="" class="agreagandoMascota" id="agregandoMascota">
+                <div>
+                    <input type="text" name="" id="pNombre" required>
+                    <label for="">Nombre</label>
+                </div>
+                <div>
+                    <input type="text" name="" id="pRaza" required>
+                    <label for="">Raza</label>
+                </div>
+                <div>
+                    <input type="text" name="" id="pEdad" required>
+                    <label for="">Edad</label>
+                </div>
+                <div>
+                    <input type="text" name="" id="pDecease" required>
+                    <label for="">Enfermedad/Condición</label>
+                </div>
+            </form>
+            <button class="agregarMascota" id="atrasMascota">Atrás</button>
+            <button class="agregarMascota" id="guardarMascota">Guardar</button>
+        </div>
         <script src="/scriptLogin.js"></script>
     </body>
->>>>>>> ab750db (Agregando optimización en JS):views/perfil.html
 </html>
