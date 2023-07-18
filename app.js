@@ -2,7 +2,10 @@ const express = require("express");
 const path = require("path");
 const bodyParser = require('body-parser')
 const NodeCache = require("node-cache");
-const authRoute = require("./routes/auth")
+const authRoute = require("./routes/auth");
+const db = require("./config/db");
+
+db();
 
 const CLIENT_ID = "AeDBfqCHS2kuTjLSiFmkbrzVL8qm7ibeGvDD7JWyDJqGmwtuC5D-PnXGobAeD-bYQo_RwcO3lSBpwF2r";
 const APP_SECRET = "EAD089fc5pfy3Hab9WdFO5OJCdofETIOSnq4VnC-EkHZAqmsh1hhknke7v6dWm9sfG_NmPQRyYhPo8ti";

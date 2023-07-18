@@ -11,5 +11,5 @@ const usuarioSchema = new Schema({
     }
 }, {timestamps: true})
 
-const usuarios = mongoose.model('usuarios', usuarioSchema)
-module.exports = usuarios
+const usuarioModel = mongoose.model('usuarioModel', usuarioSchema)
+module.exports = usuarioModel
