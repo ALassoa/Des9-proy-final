@@ -1,3 +1,4 @@
+// MODEL
 // Autenticacion del login con la BD - REGISTRO
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
