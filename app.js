@@ -126,6 +126,17 @@ async function generateAccessToken() {
     return data.access_token;
 }
 // FIN PAYPAL
+//////LOADING///////
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+////////////////////
 
 app.use(express.static(__dirname + '/img'));
 app.use(express.static(__dirname + '/estilos'));
