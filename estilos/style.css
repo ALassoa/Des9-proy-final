@@ -345,6 +345,80 @@ header{
     justify-content: center;
 }
 
+/****************INDEX DROPDOWN*************/
+.cortina{
+    max-width: 28.125rem;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.cortina input{
+    display: none;
+}
+
+.cortina label{
+    position: relative;
+    font-weight: 600;
+    background: var(--blanco);
+    box-shadow: 0 .3rem .688rem 0 rgba(0, 0, 0, 0.1), 0 .25rem .688rem 0 rgba(0, 0, 0, 0.08);
+    color: var(--naranja);
+    display: block;
+    margin-bottom: .6rem;
+    cursor: pointer;
+    padding: .6rem;
+    border: .25rem;
+    z-index: 1;
+}
+
+.cortina label::after{
+    content: "";
+    position: absolute;
+    right: .9rem;
+    top: .9rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    transition: all .3s ease;
+    /*flechita*/
+}
+
+.cortina input:checked + label::after,
+.cortina .fa-solid .fa-arrow-right{
+    transform: rotate(90deg);
+}
+
+.cortina-text{
+    max-height: .06rem;
+    overflow: hidden;
+    border-radius: .3rem;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: .5;
+    transition: all .3s ease;
+}
+
+.cortina input:checked ~ .cortina-text{
+    max-height: 18.75rem;
+    padding-bottom: 1.5rem;
+    background: var(--blanco);
+    box-shadow: 0 .3rem .688rem 0 rgba(0, 0, 0, 0.1), 0 .25rem .688rem 0 rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    top: 0;
+}
+
+.cortina-text h2{
+    margin-bottom: .6rem;
+    padding: .9rem .9rem 0;
+    color: var(--naranja);
+}
+
+.cortina-text p{
+    padding-left: .9rem;
+    padding-right: .9rem;
+}
+
+
+/****************FIN INDEX DROPDOWN*************/
 
 
 
