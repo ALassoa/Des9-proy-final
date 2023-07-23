@@ -1,9 +1,11 @@
 const express = require("express");
 const path = require("path");
+const users = require('./randomData.json');
+const db = require("./connection/db");
 const bodyParser = require('body-parser')
 const NodeCache = require("node-cache");
 const authRoute = require("./routes/auth");
-const db = require("./connection/db");
+const logReqRes = require("./middleware/middleware");
 
 db();
 
@@ -135,5 +137,6 @@ app.listen(3000, () => {
     console.log("El servidor se ejecuta en el puerto :", 3000);
 });
 
+app.use(logReqRes("log.txt"));
 app.use("/user", authRoute);
 //app.use('/api', authRoute);

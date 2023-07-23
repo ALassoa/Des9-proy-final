@@ -1,4 +1,5 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
+//mongoose.set("strictQuery, true");
 
 const mongodbUrl = "mongodb://localhost:27017/woofBD"
 

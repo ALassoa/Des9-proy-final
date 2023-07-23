@@ -2,6 +2,7 @@ const usuarios = require('../models/usuarios')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { Error } = require('mongoose')
+const User = require("../models/usuarios")
 
 // Función para el proceso de registro 
 
@@ -64,6 +65,52 @@ const login = (req, res, next) => {
     })
 }
 
+async function handleGetAllUsers(req, res){
+    const allDbUsers = await User.find({});
+    return res.join(allDbUsers);
+}
+
+async function handleGetUserById(req, res){
+    const user = await User.findById(req.params.id);
+    if(!user)
+        return res.status(404).json({error: "El usuario no existe"});
+        return res.json(user);
+}
+
+async function handleUpdateUserById(req, res){
+    await User.findByIdAndUpdate(req.params.id, {password: "Cambiada"});
+    return res.json({status: "Exitoso"});
+}
+
+async function handleDeleteUserById(req, res){
+    await User.findByIdAndDelete(req.params.id);
+    return res.json({status: "Exitoso"});
+}
+
+async function handleCreateNewUser(req, res){
+    const body = req.body;
+        if(
+            !body || !body.email || !body.firstName || !body.lastName || !body.password || !body.address
+        ){
+            return res.status(400).json({msg: "Tiene que llenar todos los campos..."});
+        }
+        const result = await User.create({
+            firstName: body.firstName,
+            lastName: body.lastName,
+            email: body.email,
+            password: body.password,
+            address: body.address
+        });
+
+        return res.status(201).json({msg: "Exitoso", id: result._id});
+}
+
 module.exports={
-    register, login
+    register, 
+    login,
+    handleGetAllUsers,
+    handleGetUserById,
+    handleUpdateUserById,
+    handleDeleteUserById,
+    handleCreateNewUser
 }
