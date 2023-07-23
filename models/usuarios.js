@@ -1,14 +1,17 @@
-// MODEL
+// Collection schema
 // Autenticacion del login con la BD - REGISTRO
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
 const usuarioSchema = new Schema({
     email:{
-        type: String
+        type: String,
+        required: true,
+        unique: true,
     },
     password:{
-        type: String
+        type: String, 
+        required: true,
     }
 }, {timestamps: true})
 

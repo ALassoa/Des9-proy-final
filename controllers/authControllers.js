@@ -1,4 +1,4 @@
-const usuarios = require('../collections/usuarios')
+const usuarios = require('../models/usuarios')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { Error } = require('mongoose')

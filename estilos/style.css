@@ -346,6 +346,11 @@ header{
 }
 
 /****************INDEX DROPDOWN*************/
+/* .menuUno{
+    display: flex;
+    justify-content: center;
+} */
+
 .cortina{
     max-width: 50rem;
     overflow: hidden;
@@ -368,7 +373,7 @@ header{
     display: block;
     margin-bottom: .6rem;
     cursor: pointer;
-    padding: .6rem;
+    padding: .6rem 0;
     border: .25rem;
     z-index: 1;
 }
@@ -386,8 +391,13 @@ header{
 
 .cortina .flechita{
     position: absolute;
-    right: .1rem;
+    right: 1rem;
     color: var(--morado);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
 }
 
 .cortina input:checked + label::after,
@@ -406,6 +416,11 @@ header{
     transition: all .3s ease;
 }
 
+.cortina .cortina-text{
+    max-height: 18.75rem;
+    padding-bottom: 1.563rem;
+    background: var(--blanco);
+}
 .cortina input:checked ~ .cortina-text{
     max-height: 18.75rem;
     padding-bottom: 1.5rem;
