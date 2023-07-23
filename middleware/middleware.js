@@ -17,4 +17,4 @@ function logReqRes(filename){
 //             return res.json({Estatus: "Existoso", id:users.lenght});
 //         });
 
-module.exports = logReqRes;
+module.exports = {logReqRes,};

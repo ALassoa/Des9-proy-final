@@ -5,7 +5,7 @@ const db = require("./connection/db");
 const bodyParser = require('body-parser')
 const NodeCache = require("node-cache");
 const authRoute = require("./routes/auth");
-const logReqRes = require("./middleware/middleware");
+const {logReqRes} = require("./middleware/middleware");
 
 db();
 
