@@ -2,3 +2,151 @@
 1690160940484:undefined GET: /favicon.ico
 
 1690167597863:undefined GET: /favicon.ico
+
+1690209502965:undefined GET: /favicon.ico
+
+1690209537405:undefined GET: /favicon.ico
+
+1690209579594:undefined GET: /favicon.ico
+
+1690212066525:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212066539:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212066545:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212066548:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212105026:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212105052:undefined GET: /favicon.ico
+
+1690212106412:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212107227:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212108227:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212109116:::ffff:127.0.0.1 GET: /pFrecuentes
+
+1690212224765:::ffff:127.0.0.1 GET: /pFrecuentes
+
+1690212237169:::ffff:127.0.0.1 GET: /pFrecuentes
+
+1690212245600:::ffff:127.0.0.1 GET: /estilos/style.css
+
+1690212245884:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212333550:undefined GET: /favicon.ico
+
+1690212334880:::ffff:127.0.0.1 GET: /pFrecuentes
+
+1690212356013:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212356016:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212356029:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212356061:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212438057:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212438058:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212438061:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212438092:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212480208:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212480208:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212480215:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212480244:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212495261:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212495262:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212495265:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212495291:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212527998:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212527999:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212528006:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212528036:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690212907566:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690212907567:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690212907568:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690212907598:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690213061168:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213061168:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690213061171:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213061201:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690213110128:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213110130:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213110133:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690213212975:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213212977:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690213212987:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213213013:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690213267238:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213267239:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690213267242:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213267273:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690213300012:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690213300012:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213300019:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213300035:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690213324549:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690213324550:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690213324555:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690214017189:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690214017194:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690214017194:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690214017210:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690214206498:::ffff:127.0.0.1 GET: /img/perroInicio.jpg
+
+1690214206503:::ffff:127.0.0.1 GET: /img/perroPaseo.jpg
+
+1690214206503:::ffff:127.0.0.1 GET: /img/perroPasea.jpg
+
+1690214282522:::ffff:127.0.0.1 GET: /img/4.jpg
+
+1690214282522:::ffff:127.0.0.1 GET: /img/4.png

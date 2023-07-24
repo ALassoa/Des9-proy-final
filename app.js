@@ -47,8 +47,8 @@ app.get("/cuidadores", (req, res) => {
     res.sendFile(path.join(__dirname + "/views/cuidadores.html"));
 });
 
-app.get("/payment", (req, res) => {
-    res.sendFile(path.join(__dirname + "/views/payment.html"));
+app.get("/pFrecuentes", (req, res) => {
+    res.sendFile(path.join(__dirname + "/views/pFrecuentes.html"));
 });
 
 app.get("/pasarela", (req, res) => {
