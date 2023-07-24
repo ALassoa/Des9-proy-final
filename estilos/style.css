@@ -346,102 +346,72 @@ header{
 }
 
 /****************INDEX DROPDOWN*************/
-/* .menuUno{
-    display: flex;
-    justify-content: center;
-} */
 
-.cortina{
-    max-width: 50rem;
-    overflow: hidden;
-    font-weight: 500;
-    border: .875rem var(--morado);
-    padding: .6rem .9rem .6rem;
+.acordeon{
+    margin: 3.75rem auto;
+    width: 51.875rem;
 }
 
-.cortina input{
+.acordeon li{
+    list-style: none;
+    width: 100%;
+    margin: 1.25rem;
+    padding: .625rem;
+    border-radius: .5rem;
+    background: var(--morado);
+    box-shadow: .375rem .375rem .625rem .06rem rgba(0, 0, 0, 0.15),
+                -.375rem -.375rem .625rem -.06rem rgba(255, 255, 255, 0.15);
+}
+
+.acordeon li label{
+    display: flex;
+    align-items: center;
+    padding: .625rem;
+    font-size: xx-large;
+    font-weight: 400;
+    color: var(--naranja);
+    cursor: pointer;
+}
+
+.acordeon label::before{
+    content: '+';
+    margin-right: .625rem;
+    font-weight: 700;
+    font-size:xx-large;
+}
+
+input[type="radio"]{
     display: none;
 }
 
-.cortina label{
-    position: relative;
-    border-radius: .875rem;
-    font-weight: 600;
-    background: var(--blanco);
-    /* box-shadow: 0 .3rem .688rem 0 rgba(0, 0, 0, 0.1), 0 .25rem .688rem 0 rgba(0, 0, 0, 0.08); */
-    color: var(--naranja);
-    display: block;
-    margin-bottom: .6rem;
-    cursor: pointer;
-    padding: .6rem 0;
-    border: .25rem;
-    z-index: 1;
-}
-
-.cortina label::after{
-    content: "";
-    position: absolute;
-    right: .9rem;
-    top: .9rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    transition: all .3s ease;
-    /*flechita*/
-}
-
-.cortina .flechita{
-    position: absolute;
-    right: 1rem;
-    color: var(--morado);
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 99;
-}
-
-.cortina input:checked + label::after,
-.cortina .flechita{
-    transform: rotate(90deg);
-}
-
-.cortina-text{
-    max-height: .06rem;
+.acordeon .contenidoAcordeon{
+    color: var(--blanco);
+    padding: 0 .625rem;
+    line-height: 1.625rem;
+    max-height: 0;
     overflow: hidden;
-    border-radius: .3rem;
-    line-height: 1.4;
-    position: relative;
-    top: -100%;
-    opacity: .5;
-    transition: all .3s ease;
+    transition: max-height .5s, padding .5s;
 }
 
-.cortina .cortina-text{
-    max-height: 18.75rem;
-    padding-bottom: 1.563rem;
-    background: var(--blanco);
-}
-.cortina input:checked ~ .cortina-text{
-    max-height: 18.75rem;
-    padding-bottom: 1.5rem;
-    background: var(--blanco);
-    box-shadow: 0 .3rem .688rem 0 rgba(0, 0, 0, 0.1), 0 .25rem .688rem 0 rgba(0, 0, 0, 0.08);
-    opacity: 1;
-    top: 0;
+.acordeon input[type="radio"]:checked + label + .contenidoAcordeon{
+    max-height: 25rem;
+    padding: .625rem .625rem 1.25rem;
 }
 
-.cortina-text h2{
-    margin-bottom: .6rem;
-    padding: .9rem .9rem 0;
-    color: var(--naranja);
+.acordeon input[type="radio"]:checked + label::before{
+    content: '-';
 }
 
-.cortina-text p{
-    padding-left: .9rem;
-    padding-right: .9rem;
+.acordeon li button{
+    color: var(--blanco);
+    background-color: var(--naranja);
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    padding: 1.3rem;
+    border-radius: .4rem;
+    overflow: hidden;
 }
-
-
 /****************FIN INDEX DROPDOWN*************/
 
 
