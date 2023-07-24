@@ -333,7 +333,7 @@ header{
 
 #welcome{
     background-image: url("/perroPaseo.jpg");
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background-position: top 80% right -20%;
     background-size: cover;
@@ -343,6 +343,16 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#welcome .textoWelcome{ 
+    color: var(--blanco);
+    font-size: x-large;
+}
+
+#welcome p{
+    color: var(--blanco);
+    font-size: x-large;
 }
 
 /* Slideshow container */
@@ -478,6 +488,14 @@ input[type="radio"]{
     transition: max-height .5s, padding .5s;
 }
 
+.contenidoAcordeon a{
+    color: var(--naranja);
+}
+
+.contenidoAcordeon a:hover{
+    color: var(--blanco);
+}
+
 .acordeon input[type="radio"]:checked + label + .contenidoAcordeon{
     max-height: 25rem;
     padding: .625rem .625rem 1.25rem;
@@ -504,11 +522,23 @@ input[type="radio"]{
 }
 /****************FIN INDEX DROPDOWN*************/
 
+.cuidadores{
+    padding: 1.2rem;
+    margin: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.cuidadores .perfilCuidadores{
+    margin: 1.3rem;
+}
+
 /***********CALENDARIO**************/
 .calendly-inline-widget{
     position: relative;
     width: 74rem;
-    height: 70rem;
+    /* height: 70rem; */
     background: transparent;
     border: 0.19rem solid var(--morado);
     border-radius: 1.3rem;
@@ -529,7 +559,8 @@ input[type="radio"]{
     -webkit-border-radius: 9;
     -moz-border-radius: 9;
     border-radius: 9px;
-    font-family: Arial;
+    margin: 1.3rem;
+    /* font-family: Arial; */
     color: var(--blanco);
     font-size: 20px;
     padding: 10px 20px 10px 20px;
@@ -537,7 +568,7 @@ input[type="radio"]{
   }
   
   .btn:hover {
-    background: #9775c7;
+    background: var(--naranja);
     text-decoration: none;
   }
 /* FIN ESTILOS PARA BOTONES EN CALENDARIO */
