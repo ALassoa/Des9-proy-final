@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
     <body>
         <header>
@@ -20,7 +20,7 @@
                 <a class="active" href="/index">Home</a>
                 <a class="active" href="/packs">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
                 <a class="active" href="/cuidadores">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
-                <a class="active" href="/payment">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
+                <a class="active" href="/pFrecuentes">Preguntas Frecuentes</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
             </nav>
             <button class="hamburguesa">
                 <div class="bar"></div>
@@ -31,13 +31,17 @@
             <a class="active" href="/index">Home</a>
             <a class="active" href="/packs">Agendar Cita</a><!--Te muestra los packs, los cuales ya tendran testimonios  y al seleccionarlo te muestra el calendario-->
             <a class="active" href="/cuidadores">Cuidadores</a><!--Solo imagenes y texto de lo que pasean-->
-            <a class="active" href="/payment">Métodos de pago</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
+            <a class="active" href="/pFrecuentes">Preguntas Frecuentes</a><!--Es solo para instruir al usuario y que sepa solo manejamos paypal/nequi--> 
         </nav>
+        <!-- <div class="loader"></div> -->
         <!--Inicio de la clase login-->
         <div class="wrapper">
             <div class="form Login">
                 <h2>LOGIN</h2>
+                    <!-- <form action="#" method="POST"> -->
+
                     <form action="/index" onsubmit="generateSession()">
+
                         <div class="inputBox">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" name="" id="correoLogin" required>
@@ -62,10 +66,11 @@
                     </form>
             </div>
             <!--Fin de la clase login-->
+        
             <!--Inicio de la clase Registro-->
             <div class="form Register">
                 <h2>REGISTRO</h2>
-                    <form action="#">
+                    <form action="add" method="POST">
                         <div class="inputBox">
                             <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                             <input type="email" name="" id="correoRegister" required>
@@ -96,6 +101,19 @@
             </div>
             <!--Fin de la clase Registro-->
         </div>
+        <script>
+            //////LOADING///////
+            window.addEventListener("load", () => {
+                const loader = document.querySelector(".loader");
+            
+                loader.classList.add("loader--hidden");
+            
+                loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+                });
+            });
+            ////////////////////
+        </script>
         <script src="/scriptLogin.js"></script>
     </body>
 </html>

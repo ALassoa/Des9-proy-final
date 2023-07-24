@@ -290,6 +290,47 @@ header{
 }
 /*****************FIN DEL LOGIN*******************/
 
+/********************Spinner loading*********************/
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blanco);
+    transition: opacity 0.75s, visibility 0.75s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 4.625rem;
+    height: 4.625rem;
+    border: .875rem solid var(--morado);
+    border-top-color: var(--naranja);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
+
+/********************Spinner loading*********************/
+
 #welcome{
     background-image: url("/perroPaseo.jpg");
     height: 90vh;
@@ -304,8 +345,164 @@ header{
     justify-content: center;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
+/****************INDEX DROPDOWN*************/
+.acordeon{
+    margin: 3.75rem;
+    width: 51.875rem;
+}
 
+.acordeon li{
+    list-style: none;
+    width: 100%;
+    margin: 1.25rem;
+    padding: .625rem;
+    border-radius: .5rem;
+    background: var(--morado);
+    box-shadow: .375rem .375rem .625rem .06rem rgba(0, 0, 0, 0.15),
+                -.375rem -.375rem .625rem -.06rem rgba(255, 255, 255, 0.15);
+}
+
+.acordeon li label{
+    display: flex;
+    align-items: center;
+    padding: .625rem;
+    font-size: xx-large;
+    font-weight: 400;
+    color: var(--naranja);
+    cursor: pointer;
+}
+
+.acordeon label::before{
+    content: '+';
+    margin-right: .625rem;
+    font-weight: 700;
+    font-size:xx-large;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.acordeon .contenidoAcordeon{
+    color: var(--blanco);
+    padding: 0 .625rem;
+    line-height: 1.625rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s, padding .5s;
+}
+
+.acordeon input[type="radio"]:checked + label + .contenidoAcordeon{
+    max-height: 25rem;
+    padding: .625rem .625rem 1.25rem;
+}
+
+.acordeon input[type="radio"]:checked + label::before{
+    content: '-';
+}
+
+.acordeon li button{
+    color: var(--blanco);
+    background-color: var(--naranja);
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    padding: 1.3rem;
+    border-radius: .4rem;
+    overflow: hidden;
+}
+
+.acordeon li button:hover{
+    background-color: var(--blanco);
+    color: var(--naranja);
+}
+/****************FIN INDEX DROPDOWN*************/
 
 /***********CALENDARIO**************/
 .calendly-inline-widget{
@@ -328,12 +525,12 @@ header{
 
 /* INI ESTILOS PARA BOTONES EN CALENDARIO */
 .btn {
-    background: #512888;
+    background: var(--morado);
     -webkit-border-radius: 9;
     -moz-border-radius: 9;
     border-radius: 9px;
     font-family: Arial;
-    color: #ffffff;
+    color: var(--blanco);
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
