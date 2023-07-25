@@ -200,3 +200,21 @@
 1690239008667:::ffff:127.0.0.1 GET: /favicon.ico
 
 1690239196234:undefined GET: /favicon.ico
+
+1690248072401:::ffff:127.0.0.1 GET: /img/4.jpg
+
+1690248072402:::ffff:127.0.0.1 GET: /img/4.png
+
+1690248072534:::ffff:127.0.0.1 GET: /favicon.ico
+
+1690248214191:::ffff:127.0.0.1 GET: /img/4.jpg
+
+1690248214191:::ffff:127.0.0.1 GET: /img/4.png
+
+1690252307134:::ffff:127.0.0.1 GET: /img/4.jpg
+
+1690252307161:::ffff:127.0.0.1 GET: /img/4.png
+
+1690252963573:undefined GET: /favicon.ico
+
+1690253131809:undefined GET: /favicon.ico
